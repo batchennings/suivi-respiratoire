@@ -2,7 +2,7 @@ import Chart from 'chart.js/auto';
 // charger les données externes
 // lancer une
 // lancer le rendu du graph
-const sourceData = '../../data/data.json'; // la source de données
+const sourceData = '../../data/mock.json'; // la source de données
 let curveData = []; // la donnée qui s'implémente au fur et à mesure
 let t = 0;
 const refreshRate = 90; // tx de rafraichissement en millisecondes
@@ -15,6 +15,10 @@ async function getData(url) {
     const response = await fetch(url);
     return response.json();
 }
+const font = new FontFace("plex", "url(../assets/fonts/IBMPlexSans-Medium.ttf)", {
+  style: "regular",
+  weight: "400",
+});
 
 const chart = new Chart(
     document.getElementById('myChart'),
@@ -58,7 +62,7 @@ const chart = new Chart(
                         color: '#FFFFFF',
                         font: {
                             size: 22,
-                            family: 'IBM Plex Sans',
+                            family: font,
 }
 }
                 }
@@ -73,6 +77,7 @@ const chart = new Chart(
 );
 
 const data = await getData(sourceData);
+
 
 ////////
 // START
