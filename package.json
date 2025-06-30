@@ -1,0 +1,41 @@
+{
+    "name": "sample",
+    "version": "1.0.0",
+    "description": "Starter kit with webpack",
+    "main": "index.js",
+    "dependencies": {
+        "babel-core": "^6.26.3",
+        "c2.js": "^1.0.5",
+        "chart.js": "^4.2.0",
+        "sass": "^1.89.2",
+        "start-concurrently": "^1.0.1"
+    },
+    "devDependencies": {
+        "@babel/cli": "^7.20.7",
+        "@babel/core": "^7.20.12",
+        "babel-loader": "^9.1.2",
+        "css-loader": "^6.7.3",
+        "file-loader": "^6.2.0",
+        "sass-loader": "^13.2.0",
+        "style-loader": "^3.3.1",
+        "webpack": "^5.75.0",
+        "webpack-cli": "^5.0.1"
+    },
+    "scripts": {
+        "test": "echo \"Error: no test specified\" && exit 1",
+        "start": "start-concurrently",
+        "start-sass": "sass --watch --trace client/sass:dist/css",
+        "start-webpack": "webpack",
+        "start-server": "python3 -m http.server 8080"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://gitlab.com/patjennings/content-slices-navigation.git"
+    },
+    "author": "",
+    "license": "ISC",
+    "bugs": {
+        "url": "https://gitlab.com/patjennings/content-slices-navigation/issues"
+    },
+    "homepage": "https://gitlab.com/patjennings/content-slices-navigation#README"
+}
