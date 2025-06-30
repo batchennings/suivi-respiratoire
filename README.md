@@ -1,14 +1,11 @@
 # suivi-respiratoire
+Visualisation dynamique de suivi respiratoire pour un outil de monitoring en milieu hospitalier
 
 ## Démarrage
 
-Mettre à jour les dépendances avant d'installer les `nodes_modules`
 ``` shell
-npm i -g npm-check-updates
-ncu -u
-npm install
+pnpm i
+pnpm start
 ```
-
-Ne pas oublier de copier le `.gitignore`
 
 
